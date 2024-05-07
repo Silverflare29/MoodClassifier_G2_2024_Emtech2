@@ -34,19 +34,14 @@ else:
     prediction = prediction*100000
     prediction = np.array(prediction,dtype=int)
     predRaw= prediction
-    """if prediction[0][0]>=999:
+    if prediction[0][0]>=199:
       prediction[0][0]=prediction[0][0]%100
-    if prediction[0][1]>=999:
+    if prediction[0][1]>=199:
       prediction[0][1]=prediction[0][1]%100
-    if prediction[0][2]>=999:
+    if prediction[0][2]>=199:
       prediction[0][2]=prediction[0][2]%100
-    if prediction[0][3]>=999:
-      prediction[0][3]=prediction[0][3]%100"""
-
-    prediction[0][0]=prediction[0][0]%100
-    prediction[0][1]=prediction[0][1]%100
-    prediction[0][2]=prediction[0][2]%100
-    prediction[0][3]=prediction[0][3]%100
+    if prediction[0][3]>=199:
+      prediction[0][3]=prediction[0][3]%100
     
     string="The weather is "+class_names[np.argmax(prediction)] + str(prediction) + str(prediction[0][2]) + str(predRaw)
     st.success(string)
