@@ -31,5 +31,5 @@ else:
     st.image(image,use_column_width=True)
     prediction=import_and_predict(image,model)
     class_names=['Sunrise','Shine', 'Rain', 'Cloudy']
-    string="The weather is "+class_names[np.argmax(prediction)]+str(prediction)
+    string="The weather is "+class_names[np.argmax(prediction)]+str(prediction*100)
     st.success(string)
