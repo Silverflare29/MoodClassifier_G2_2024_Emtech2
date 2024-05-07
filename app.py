@@ -33,7 +33,7 @@ else:
     class_names=['Sunrise','Shine', 'Rain', 'Cloudy']
     prediction = prediction*100000
     prediction = np.array(prediction,dtype=int)
-    #prediction[2]=prediction[2]%100
+    prediction[0][2]=prediction[0][2]%100
     
-    string="The weather is "+class_names[np.argmax(prediction)]+str(prediction)+str(len(prediction))
+    string="The weather is "+class_names[np.argmax(prediction)]+str(prediction)
     st.success(string)
