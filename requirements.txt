@@ -4,3 +4,6 @@ tensorflow
 torchvision
 pillow
 flask
+streamlit
+pandas
+numpy
