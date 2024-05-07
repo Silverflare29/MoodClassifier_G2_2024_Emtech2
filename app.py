@@ -30,7 +30,7 @@ else:
     image=Image.open(file)
     st.image(image,use_column_width=True)
     prediction=import_and_predict(image,model)
-    class_names=['Sunrise','Shine', 'Rain', 'Cloudy']
+    class_names=['Sunrise','Cloudy', 'Rain', 'Shine']
     prediction = prediction*100000
     prediction = np.array(prediction,dtype=int)
     prediction[0][2]=prediction[0][2]%100
