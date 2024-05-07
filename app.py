@@ -34,8 +34,8 @@ else:
     prediction = prediction*100000
     prediction = np.array(prediction,dtype=int)
     predRaw= prediction
-    if prediction[0][0]>=10000:
-      prediction[0][0]=prediction[0][0]%1000
+    #if prediction[0][0]>=10000:
+      #prediction[0][0]=prediction[0][0]%1000
     if prediction[0][1]>=10000:
       prediction[0][1]=prediction[0][1]%1000
     if prediction[0][2]>=10000:
