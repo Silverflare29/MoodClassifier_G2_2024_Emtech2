@@ -23,9 +23,6 @@ st.write("""
 file=st.file_uploader("Choose weather photo from computer",type=["jpg","png"])
 
 
-
-import cv2
-
 from PIL import Image,ImageOps
 
 import numpy as np
