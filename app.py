@@ -43,5 +43,5 @@ else:
     if prediction[0][3]>=199:
       prediction[0][3]=prediction[0][3]%100"""
     
-    string="The weather is "+class_names[np.argmax(prediction)] + str(prediction) + str(prediction[0][2]) + str(predRaw)
+    string="The weather is "+class_names[np.argmax(prediction)] + "\n Values" +str(prediction)
     st.success(string)
