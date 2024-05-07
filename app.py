@@ -35,5 +35,5 @@ else:
     prediction = np.array(prediction,dtype=int)
     prediction[0][2]=prediction[0][2]%100
     
-    string="The weather is "+class_names[np.argmax(prediction)]
+    string="The weather is "+class_names[np.argmax(prediction)] + str(prediction)
     st.success(string)
